@@ -27,6 +27,7 @@ public class TcpSocketServer {
                 thread.start();
                 //获取客户端的ip
                 InetAddress address = socket.getInetAddress();
+                System.out.println(socket.getInputStream().read());
                 System.out.println("当前链接的客户端的IP：" + address.getHostAddress());
             }
         } catch (Exception e) {
