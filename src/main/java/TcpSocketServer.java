@@ -14,7 +14,7 @@ public class TcpSocketServer {
             // 创建服务端socket 绑定端口
             ServerSocket serverSocket = new ServerSocket();
             //绑定ip
-            serverSocket = new ServerSocket(8088, 10, InetAddress.getByName("192.168.0.110"));
+            serverSocket = new ServerSocket(8088, 10, InetAddress.getByName("192.168.1.89"));
             // 创建客户端socket 用户下面接收客户端socket对象
             Socket socket = new Socket();
             System.out.println("等待客户端连接...");
